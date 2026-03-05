@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import { setWebhook, TELEGRAM_API } from "./telegram.js";
 
 dotenv.config();
-const { PORT, SERVER_URL } = process.env;
+const { PORT, SERVER_URL, URI } = process.env;
 const app = express();
 app.use(express.json());
 
